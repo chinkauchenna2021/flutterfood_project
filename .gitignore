@@ -1,5 +1,6 @@
 node_modules
+/node_modules
 serviceAccountKey.json
 firestore-export.json
 package-lock.json
-/Website - Admin Panel - Restaurant Panel - Landing Page
+# /Website - Admin Panel - Restaurant Panel - Landing Page
