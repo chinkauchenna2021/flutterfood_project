@@ -1,1 +1,29 @@
-{  "Replace your file": "1" }
+{
+  "project_info": {
+    "project_number": "996880334783",
+    "project_id": "foodiesrestaurantlogis",
+    "storage_bucket": "foodiesrestaurantlogis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996880334783:android:afd888e157020fedb72b0a",
+        "android_client_info": {
+          "package_name": "com.foodies.restaurant.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGmEJ36dfiUHTVwhDS2ICM8iUFoCxBt04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

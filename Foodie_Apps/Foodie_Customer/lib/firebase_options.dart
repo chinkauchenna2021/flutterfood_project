@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,23 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'Place your key',
-    appId: 'Place your key',
-    messagingSenderId: 'Place your key',
-    projectId: 'Place your key',
-    storageBucket: 'Place your key',
-    databaseURL: 'Place your key',
+    apiKey: 'AIzaSyAdphBZ4X7uN6rW_kkRMeMDko6IAS9FTDI',
+    appId: '1:330365143644:android:8a05d6d35adfaf9e7a7499',
+    messagingSenderId: '330365143644',
+    projectId: 'chowqwiklogis',
+    storageBucket: 'chowqwiklogis.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'Place your key',
-    appId: 'Place your key',
-    messagingSenderId: 'Place your key',
-    projectId: 'Place your key',
-    storageBucket: 'Place your key',
-    androidClientId: 'Place your key',
-    iosClientId: 'Place your key',
-    iosBundleId: 'Place your key',
-    databaseURL: 'Place your key',
+    apiKey: 'AIzaSyDHwslpz2XFEQcgV8eXHvrsPl522YDtgDw',
+    appId: '1:330365143644:ios:544da2efb6071ab77a7499',
+    messagingSenderId: '330365143644',
+    projectId: 'chowqwiklogis',
+    storageBucket: 'chowqwiklogis.appspot.com',
+    iosBundleId: 'com.foodies.customer.ios',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBFDj5lO3u83BluqCr9flvygaPjs3jqvas',
+    appId: '1:330365143644:web:4f2873c56157a4df7a7499',
+    messagingSenderId: '330365143644',
+    projectId: 'chowqwiklogis',
+    authDomain: 'chowqwiklogis.firebaseapp.com',
+    storageBucket: 'chowqwiklogis.appspot.com',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDHwslpz2XFEQcgV8eXHvrsPl522YDtgDw',
+    appId: '1:330365143644:ios:c3fc674ce3b1359d7a7499',
+    messagingSenderId: '330365143644',
+    projectId: 'chowqwiklogis',
+    storageBucket: 'chowqwiklogis.appspot.com',
+    iosBundleId: 'chowqwiklogis',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyBFDj5lO3u83BluqCr9flvygaPjs3jqvas',
+    appId: '1:330365143644:web:22f1e2de1ab4b2e77a7499',
+    messagingSenderId: '330365143644',
+    projectId: 'chowqwiklogis',
+    authDomain: 'chowqwiklogis.firebaseapp.com',
+    storageBucket: 'chowqwiklogis.appspot.com',
+  );
+
 }

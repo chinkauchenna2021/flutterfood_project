@@ -1,1 +1,29 @@
-{  "Replace your file": "1" }
+{
+  "project_info": {
+    "project_number": "81773247098",
+    "project_id": "foodiesdriverlogis",
+    "storage_bucket": "foodiesdriverlogis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81773247098:android:b19ae27d63fbfbb9e499c3",
+        "android_client_info": {
+          "package_name": "com.foodies.driver.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbZYC7Jj97ApoL6tm5ab6iTBLlWnvJBxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
