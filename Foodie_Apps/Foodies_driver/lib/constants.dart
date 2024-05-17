@@ -38,7 +38,7 @@ const newOrderPlaced = "new_order_placed";
 const SECOND_MILLIS = 1000;
 const MINUTE_MILLIS = 60 * SECOND_MILLIS;
 const HOUR_MILLIS = 60 * MINUTE_MILLIS;
-const SERVER_KEY = 'Replace your server key';
+const SERVER_KEY = 'AAAAEwoQuno:APA91bEZ_otuXxdp89Kk4_zyT7A_AiVkuXr25ju3P7nUU6fUPEHF3EwOlxqXQbMGjr6HRZZqUaxF861Xw3d8ub7_D1rWbDANwMaIsyFLzcNuHpD0Rs1vuO6y2ZoaX-4q3eZV3EXTI9s8';
 String GOOGLE_API_KEY = '';
 
 bool isRazorPayEnabled = false;
