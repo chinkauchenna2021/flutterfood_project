@@ -727,7 +727,7 @@ class _CartScreenState extends State<CartScreen> {
                 GestureDetector(
                   onTap: () {
                     BottomPicker.dateTime(
-                      titleStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                      // titleStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                       onSubmit: (index) {
                         setState(() {
                           DateTime dateAndTime = index;
@@ -736,8 +736,8 @@ class _CartScreenState extends State<CartScreen> {
                       },
                       minDateTime: DateTime.now(),
                       displaySubmitButton: true,
-                      title: '',
-                      buttonSingleColor: Color(COLOR_PRIMARY),
+                      // title: "",
+                      buttonSingleColor: Color(COLOR_PRIMARY), pickerTitle: Text(""),
                     ).show(context);
                   },
                   child: Text(
