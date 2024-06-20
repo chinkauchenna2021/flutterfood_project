@@ -53,7 +53,7 @@ const GIFT_PURCHASES = 'gift_purchases';
 const SECOND_MILLIS = 1000;
 const MINUTE_MILLIS = 60 * SECOND_MILLIS;
 const HOUR_MILLIS = 60 * MINUTE_MILLIS;
-const SERVER_KEY = 'Replace Your server key';
+const SERVER_KEY = 'AAAATOtMClw:APA91bGmlgcronQKGuhP2OoAZmrLk8UojRuPRaDi5SVnoUoVHV9oLEPjK2Y4uTNiRoZFjfvg2-2jYB6yonZhXLGmAI24q5bYPpG1GaAxmE3erIsyCjx5srRtmyflYnecxD1TVTRFZRXI';
 String GOOGLE_API_KEY = '';
 
 const ORDER_STATUS_PLACED = 'Order Placed';

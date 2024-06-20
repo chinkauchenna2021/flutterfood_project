@@ -867,7 +867,7 @@ class FireStoreUtils {
       var url = 'https://fcm.googleapis.com/fcm/send';
       var header = {
         "Content-Type": "application/json",
-        "Authorization": "key=$SERVER_KEY",
+        "Authorization": "key=AAAAEwoQuno:APA91bEZ_otuXxdp89Kk4_zyT7A_AiVkuXr25ju3P7nUU6fUPEHF3EwOlxqXQbMGjr6HRZZqUaxF861Xw3d8ub7_D1rWbDANwMaIsyFLzcNuHpD0Rs1vuO6y2ZoaX-4q3eZV3EXTI9s8",
       };
       var request = {
         "notification": {
@@ -895,7 +895,7 @@ class FireStoreUtils {
       var url = 'https://fcm.googleapis.com/fcm/send';
       var header = {
         "Content-Type": "application/json",
-        "Authorization": "key=$SERVER_KEY",
+        "Authorization": "key=AAAAEwoQuno:APA91bEZ_otuXxdp89Kk4_zyT7A_AiVkuXr25ju3P7nUU6fUPEHF3EwOlxqXQbMGjr6HRZZqUaxF861Xw3d8ub7_D1rWbDANwMaIsyFLzcNuHpD0Rs1vuO6y2ZoaX-4q3eZV3EXTI9s8",
       };
       var request = {
         "notification": {

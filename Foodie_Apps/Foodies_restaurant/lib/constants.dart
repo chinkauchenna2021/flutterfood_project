@@ -42,7 +42,7 @@ const OrderTransaction = "order_transactions";
 const SECOND_MILLIS = 1000;
 const MINUTE_MILLIS = 60 * SECOND_MILLIS;
 const HOUR_MILLIS = 60 * MINUTE_MILLIS;
-const SERVER_KEY = 'Replace your server key';
+const SERVER_KEY = 'AAAA6Bqyv78:APA91bHJy4J-meP84QZbc4M0-tvza2UIYzMUsvLUaZ1dtl9FnjIUCpM9fFt_LlpcJovmexOSAaNVHEC2urW0S9DyF7PvTZAtAWj74aqpkojApv8zKg9HqL6J3DpOP_T3RETSq4OJNZu8';
 String GOOGLE_API_KEY = '';
 
 const ORDER_STATUS_PLACED = 'Order Placed';

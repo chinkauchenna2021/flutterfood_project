@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,21 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'Place your key',
-    appId: 'Place your key',
-    messagingSenderId: 'Place your key',
-    projectId: 'Place your key',
-    storageBucket: 'Place your key',
+    apiKey: 'AIzaSyAbZYC7Jj97ApoL6tm5ab6iTBLlWnvJBxg',
+    appId: '1:81773247098:android:b19ae27d63fbfbb9e499c3',
+    messagingSenderId: '81773247098',
+    projectId: 'foodiesdriverlogis',
+    storageBucket: 'foodiesdriverlogis.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'Place your key',
-    appId: 'Place your key',
-    messagingSenderId: 'Place your key',
-    projectId: 'Place your key',
-    storageBucket: 'Place your key',
-    androidClientId: 'Place your key',
-    iosClientId: 'Place your key',
-    iosBundleId: 'Place your key',
+    apiKey: 'AIzaSyDe3xyJ-eOH4fsqwEPVkUgw7uMClNH0mb4',
+    appId: '1:81773247098:ios:4ba9d855b6756725e499c3',
+    messagingSenderId: '81773247098',
+    projectId: 'foodiesdriverlogis',
+    storageBucket: 'foodiesdriverlogis.appspot.com',
+    iosBundleId: 'com.foodies.driver.ios',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCJUPYpcxwcwR89-wPRM3sosqWnJENBi7k',
+    appId: '1:81773247098:web:58e1a6c86fb82d7ae499c3',
+    messagingSenderId: '81773247098',
+    projectId: 'foodiesdriverlogis',
+    authDomain: 'foodiesdriverlogis.firebaseapp.com',
+    storageBucket: 'foodiesdriverlogis.appspot.com',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDe3xyJ-eOH4fsqwEPVkUgw7uMClNH0mb4',
+    appId: '1:81773247098:ios:920cd53d10dca11fe499c3',
+    messagingSenderId: '81773247098',
+    projectId: 'foodiesdriverlogis',
+    storageBucket: 'foodiesdriverlogis.appspot.com',
+    iosBundleId: 'com.foodies.driver.app',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCJUPYpcxwcwR89-wPRM3sosqWnJENBi7k',
+    appId: '1:81773247098:web:36502e77c6f76108e499c3',
+    messagingSenderId: '81773247098',
+    projectId: 'foodiesdriverlogis',
+    authDomain: 'foodiesdriverlogis.firebaseapp.com',
+    storageBucket: 'foodiesdriverlogis.appspot.com',
+  );
+
 }

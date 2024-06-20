@@ -1,1 +1,29 @@
-{  "Replace your file": "1" }
+{
+  "project_info": {
+    "project_number": "330365143644",
+    "project_id": "chowqwiklogis",
+    "storage_bucket": "chowqwiklogis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330365143644:android:8a05d6d35adfaf9e7a7499",
+        "android_client_info": {
+          "package_name": "com.foodies.customer.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdphBZ4X7uN6rW_kkRMeMDko6IAS9FTDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

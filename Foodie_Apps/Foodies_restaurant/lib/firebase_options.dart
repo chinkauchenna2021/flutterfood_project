@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,21 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'Place your key',
-    appId: 'Place your key',
-    messagingSenderId: 'Place your key',
-    projectId: 'Place your key',
-    storageBucket: 'Place your key',
+    apiKey: 'AIzaSyBGmEJ36dfiUHTVwhDS2ICM8iUFoCxBt04',
+    appId: '1:996880334783:android:afd888e157020fedb72b0a',
+    messagingSenderId: '996880334783',
+    projectId: 'foodiesrestaurantlogis',
+    storageBucket: 'foodiesrestaurantlogis.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'Place your key',
-    appId: 'Place your key',
-    messagingSenderId: 'Place your key',
-    projectId: 'Place your key',
-    storageBucket: 'Place your key',
-    androidClientId: 'Place your key',
-    iosClientId: 'Place your key',
-    iosBundleId: 'Place your key',
+    apiKey: 'AIzaSyBY_9XvYVF3I0Dbbkc0kZcRk89vxFg6hgw',
+    appId: '1:996880334783:ios:226f842db5315a02b72b0a',
+    messagingSenderId: '996880334783',
+    projectId: 'foodiesrestaurantlogis',
+    storageBucket: 'foodiesrestaurantlogis.appspot.com',
+    iosBundleId: 'com.foodies.restaurant.ios',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAdxJNNKYEymF05X17Fys9Tu0yNDS-ewpk',
+    appId: '1:996880334783:web:4f0acfa41844073bb72b0a',
+    messagingSenderId: '996880334783',
+    projectId: 'foodiesrestaurantlogis',
+    authDomain: 'foodiesrestaurantlogis.firebaseapp.com',
+    storageBucket: 'foodiesrestaurantlogis.appspot.com',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBY_9XvYVF3I0Dbbkc0kZcRk89vxFg6hgw',
+    appId: '1:996880334783:ios:3e2d898fbb095e03b72b0a',
+    messagingSenderId: '996880334783',
+    projectId: 'foodiesrestaurantlogis',
+    storageBucket: 'foodiesrestaurantlogis.appspot.com',
+    iosBundleId: 'com.foodies.restaurant.app',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyAdxJNNKYEymF05X17Fys9Tu0yNDS-ewpk',
+    appId: '1:996880334783:web:463c5195d21553afb72b0a',
+    messagingSenderId: '996880334783',
+    projectId: 'foodiesrestaurantlogis',
+    authDomain: 'foodiesrestaurantlogis.firebaseapp.com',
+    storageBucket: 'foodiesrestaurantlogis.appspot.com',
+  );
+
 }
